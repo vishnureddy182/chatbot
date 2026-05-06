@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebula Chat - AI Conversation Interface</title>
+    <link rel="stylesheet" href="{% static 'chatapp/css/style.css' %}">
+</head>
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1>🌌 Nebula Chat</h1>
+            <p>Where conversations flow like cosmic dust</p>
+        </header>
+
+        <main class="chat-messages" id="chatMessages">
+            <!-- Chat messages will be inserted here by JavaScript -->
+        </main>
+
+        <div class="chat-input-container">
+            <form id="chatForm" class="chat-form">
+                <div class="input-group">
+                    <input type="text"
+                           id="userInput"
+                           placeholder="Type your message to the nebula..."
+                           autocomplete="off"
+                           required>
+                    <button type="submit" class="send-button">
+                        <span class="send-icon">→</span>
+                    </button>
+                </div>
+                <button type="button" id="clearBtn" class="clear-button">
+                    <span class="clear-icon">✕</span> Clear Nebula
+                </button>
+            </form>
+        </div>
+
+        <div class="chat-footer">
+            <small>Powered by NVIDIA Nemotron 3 Super via OpenRouter • Session-based memory</small>
+        </div>
+    </div>
+
+    <script src="{% static 'chatapp/js/chat.js' %}"></script>
+</body>
+</html>

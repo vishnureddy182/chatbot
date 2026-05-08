@@ -23,10 +23,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ww%f_(a2#$nrped(k7w&)kwrq7$k&h!9*f1dh@au5col(jneig'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
+    "vishnureddy182-chatbot.vercel.app"
+]
 
 # Application definition
 
